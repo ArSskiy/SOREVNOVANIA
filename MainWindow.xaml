@@ -1,0 +1,38 @@
+﻿<Window x:Class="SOREVNOVANIA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SOREVNOVANIA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="490" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="Yellow">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="36*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="83*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Добавить группу"
+                       Foreground="Blue" Grid.Row="1"
+                       TextDecorations="Underline" HorizontalAlignment="Center" FontSize="20" Width="156" 
+                       MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+            <TextBlock Text="Добавить Соревнования" TextWrapping="Wrap"
+                       Foreground="Blue" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp_1"
+                       TextDecorations="Underline" HorizontalAlignment="Center" FontSize="20" Grid.Row="3"  Width="156" />
+            <TextBlock Text="Учёт"
+                       Foreground="Blue" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp_2"
+                       TextDecorations="Underline" HorizontalAlignment="Center" FontSize="20" Grid.Row="5"  />
+        </Grid>
+        <Frame Name="MainFrame" Grid.Column="1" Width="600" Height="430"/>
+    </Grid>
+</Window>
